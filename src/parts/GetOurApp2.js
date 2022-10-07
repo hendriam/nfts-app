@@ -23,11 +23,11 @@ export default function GetOurApp2() {
                     </button>
                 </div>
             </div>
-            <div className="sm:col-span-2 col-span-1">
+            <div className="sm:col-span-2 col-span-1 place-self-center">
                 <img
                     src={GetOurAppImage}
                     alt="hero"
-                    className="sm:max-w-full min-h-max"
+                    className="sm:max-w-full w-96"
                 />
             </div>
         </section>

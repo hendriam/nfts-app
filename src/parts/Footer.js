@@ -1,4 +1,5 @@
 import React from "react";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 export default function Footer() {
     return (
@@ -8,28 +9,30 @@ export default function Footer() {
             </a>
             <div className="">
                 <p className="text-sm mb-10">Krypto</p>
-                <ul className="flex flex-col space-y-3 text-xs">
-                    <li>
-                        <a href="/about" className="hover:underline">
-                            About
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/about" className="hover:underline">
-                            Pricing
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/about" className="hover:underline">
-                            Contact
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/about" className="hover:underline">
-                            Buy
-                        </a>
-                    </li>
-                </ul>
+                <Router>
+                    <ul className="flex flex-col space-y-3 text-xs">
+                        <li>
+                            <Link to="/about" className="hover:underline">
+                                About
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/pricing" className="hover:underline">
+                                Pricing
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/contact" className="hover:underline">
+                                Contact
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/buy" className="hover:underline">
+                                Buy
+                            </Link>
+                        </li>
+                    </ul>
+                </Router>
             </div>
             <div className="">
                 <p className="text-sm mb-10">Market</p>

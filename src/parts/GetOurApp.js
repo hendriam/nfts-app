@@ -4,11 +4,11 @@ import GetOurAppImage from "../assets/images/Other_18.svg";
 export default function GetOurApp() {
     return (
         <section className="grid grid-col-2 sm:grid-cols-4 items-center sm:my-28 my-20 text-[#F8F0F0]">
-            <div className="sm:col-span-2 col-span-1">
+            <div className="sm:col-span-2 col-span-1 place-self-center">
                 <img
                     src={GetOurAppImage}
                     alt="hero"
-                    className="sm:max-w-full min-h-max"
+                    className="sm:max-w-full w-96"
                 />
             </div>
             <div className="sm:px-10 px-0 sm:text-start text-center sm:col-span-2 col-span-1">
